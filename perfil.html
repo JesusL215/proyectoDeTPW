@@ -12,7 +12,6 @@
             <div class="encabezado">
                 <a href="index.html"><img src="imagenes/logo_transparent_2.png" width="100px" height="100px"></a>
                 <form>
-                    <label for="busqueda"></label>
                     <input type="search" id="busqueda" name="busqueda" placeholder="Busca tu actividad">
                     <input type="submit" value="Buscar">
                 </form>
@@ -26,36 +25,34 @@
             </div>
         </header>
         <main>
-            <section>
-                <form>
-                    <h2>INICIAR SESION</h2>
-                    <label for="address-iniciar">Ingresa tu correo</label><br>
-                    <input type="email" id="address-iniciar" required placeholder="email@dominio.com"><br><br>
-
-                    <label for="contraseña">Ingresa tu contraseña</label><br>
-                    <input type="password" id="contraseña" required><br><br>
-
-                    <input type="submit" value="INICIAR SESION">
-                </form>
+            <section class="main2">
+                <section class="container">
+                    <section class="section">
+                        <h2>INICIAR SESION</h2>
+                        <form>
+                            <label for="address-iniciar">Ingresa tu correo</label>
+                            <input type="email" id="address-iniciar" required placeholder="email@dominio.com">
+                            <label for="contraseña">Ingresa tu contraseña</label>
+                            <input type="password" id="contraseña" required>
+                            <input class="boton" type="submit" value="INICIAR SESION">
+                        </form>
+                    </section>
+                    <section class="section">
+                        <h2>REGISTRATE</h2>
+                        <form>
+                            <label for="datos">Nombre de usuario</label>
+                            <input type="text" id="datos" required>
+                            <label for="address-registrar">Dirección de correo eléctronico</label>
+                            <input type="email" id="address-registrar" required placeholder="email@dominio.com">
+                            <label for="password-reg">Contraseña</label>
+                            <input type="password" id="password-reg" required><br>
+                            <label><input type="checkbox" checked>¿Le gustaria recibir novedades sobre <strong>"Explora Perú"?</strong>.</label>
+                            <input class="boton" type="submit" value="REGISTRARSE">
+                            </form>
+                    </section>
+                </section>
             </section>
-            <section>
-                <form>
-                    <h2>REGISTRATE</h2>
-                    <label for="datos">Nombre de usuario</label><br>
-                    <input type="text" id="datos" required><br><br>
-
-                    <label for="address-registrar">Dirección de correo eléctronico</label><br>
-                    <input type="email" id="address-registrar" required placeholder="email@dominio.com"><br><br>
-
-                    <label for="password-reg">Contraseña</label><br>
-                    <input type="password" id="password-reg" required><br>
-
-                    <label><input type="checkbox" checked>¿Le gustaria recibir novedades sobre <strong>"Explora Perú"?</strong></label><br><br>
-
-                    <input type="submit" value="REGISTRARSE">
-                </form>
-            </section>
-        </main><br><br><br>
+        </main>
         <footer>
             <section class="footer">
                 <img src="imagenes/logo_transparent.png" width="150px" height="150px">

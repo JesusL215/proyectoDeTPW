@@ -1,4 +1,5 @@
-/*ESTILO PARA HOME*/
+
+/*ESTILO PARA HOME Y GENERAL*/
 /*Header Encabezado*/
 header{
     background-color: #2C2F33;
@@ -30,17 +31,35 @@ header{
     top: 40px;
     left: 120px;
 }
-
 /*SECTION Banner*/
 .tipos{
+    background-color: #EDEDED;
+
+}
+.tp2{
     width: 940px;
     position: relative;
     margin: 0 auto;
 }
+.container-img{
+    position: relative;
+    display: inline-block;
+}
+.opacidad-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 h1{
-    color: #000000;
+    color: #ffffff;
+    display: inline-block;
+    width: 350px;
+    margin: 100px 10px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
     position: absolute;
     top: 0;
     left: 5px;
@@ -76,9 +95,12 @@ h1{
 }
 /*MAIN*/
 /*MAS BUSCADO*/
+
 main{
+    background-color: #EDEDED;
+}
+.main2{
     width: 940px;
-    top: -10px;
     background-color: #EDEDED;
     position: relative;
     padding-bottom: 100px;
@@ -93,6 +115,9 @@ main{
     margin: 0 auto;
 }
 .buscado{
+    display: inline-block;
+    width: 500px;
+    position: absolute;
     left: 50px;
     margin-top: 20px;
     font-size: 20px;
@@ -116,12 +141,9 @@ main{
     border-color: #c78c19;
     transform: scale(1.01);
 }
-
 .mas-buscado li:active{
     border-color: #088c19;
 }
-
-
 /*SUGERENCIA*/
 .sugerencia{
     width: 940px;
@@ -154,21 +176,19 @@ main{
     border-color: #c78c19;
     transform: scale(1.01);
 }
-
 .sugerencia li:active{
     border-color: #088c19;
 }
-
-
 /*FOOTER*/
+footer{
+    background-color: #DAD7D0;
+}
 .footer{
     background-color: #DAD7D0;
     width: 940px;
-    top: -10px;
     position: relative;
     margin: 0 auto;
 }
-
 .footer nav{
     position: absolute;
     top: 60px;
@@ -194,12 +214,101 @@ main{
 }
 
 
-/*ESTILO PARA ARCH.CULTURA*/
-.ExpCultura{
-    left: 50px;
+/*ESTILO PARA ARCH.PERFIL*/
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 50px 50px 0 50px;
+}
+.section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container form {
+    display: block;
+    margin-top: 40px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.boton{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton:hover {
+    background-color: #45a049;
+}
+.boton{
+    margin-right: 10px;
+}
+
+/*ESTILO PARA ARCH.FAVORITO*/
+.rell{
+    padding: 300px;
+}
+.vacioFvt{
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 30px 0 30px 0;
+    width: 200px;
+    height: 200px;
+}
+.lt{
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 140px;
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
 }
+.lt p{
+    font-size: 10px;
+}
+.bt-pulsa{
+    position: absolute;
+    background-color: #195ddb;
+    margin: 80px 0 0 220px;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
 
 
+/*ESTILO PARA ARCH.PLAN*/
+.vacioFvt{
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 30px 0 30px 0;
+    width: 200px;
+    height: 200px;
+}
