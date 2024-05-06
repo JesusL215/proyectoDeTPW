@@ -1,13 +1,18 @@
-
+:root {
+	--color-negro: #2C2F33;
+	--color-gris: #EDEDED;
+	--color-crema: #DAD7D0;
+	--color-btAzul: #2B6AE4 ;
+}
 /*ESTILO PARA HOME Y GENERAL*/
 /*Header Encabezado*/
 header{
-    background-color: #2C2F33;
+    background-color: var(--color-negro);
 }
 .encabezado{
     width: 940px;
     height: 100px;
-    background-color: #2C2F33;
+    background-color: var(--color-negro);
     position: relative;
     margin: 0 auto;
 }
@@ -28,12 +33,33 @@ header{
 }
 .encabezado form{
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 120px;
 }
+#busqueda{
+    width: 500px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+}
+#buscar{
+    background-color: var(--color-btAzul);
+    position: relative;
+    left: 395px;
+    top: 5px;
+    z-index: 1000;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
 /*SECTION Banner*/
 .tipos{
-    background-color: #EDEDED;
+    background-color: var(--color-gris);
 
 }
 .tp2{
@@ -58,11 +84,11 @@ h1{
     display: inline-block;
     width: 350px;
     margin: 100px 10px;
-    font-weight: bold;
     font-size: 50px;
     position: absolute;
     top: 0;
     left: 5px;
+    font-weight: bold;
 }
 .tipos nav{
     position: absolute;
@@ -72,7 +98,6 @@ h1{
 .tipos nav li{
     background-color: #504d4d85;
     border-radius: 10px 10px 0 0;
-    border: 1px solid #504d4dfd;
     display: inline-block;
     margin: -2px;
     padding: 10px;
@@ -85,23 +110,23 @@ h1{
     text-decoration: none;
 }
 .tipos nav li:hover {
-    background-color: #EDEDED;
-	box-shadow: 0 0 20px 5px #EDEDED;
+    background-color: var(--color-gris);
+	box-shadow: 0 0 20px 5px var(--color-gris);
     border: none;
     transform: scale(1.1);
 }
 .tipos nav a:hover{
     color: #000000;
 }
+
 /*MAIN*/
 /*MAS BUSCADO*/
-
 main{
-    background-color: #EDEDED;
+    background-color: var(--color-gris);
 }
 .main2{
     width: 940px;
-    background-color: #EDEDED;
+    background-color: var(--color-gris);
     position: relative;
     padding-bottom: 100px;
     margin: 0 auto;
@@ -110,7 +135,7 @@ main{
     width: 940px;
     height: 320px;
     top: -3px;
-    background-color: #EDEDED;
+    background-color: var(--color-gris);
     position: relative;
     margin: 0 auto;
 }
@@ -134,7 +159,7 @@ main{
     margin-top: 50px;
     padding: 15px 0;
     box-sizing: border-box;
-    border: 3px solid #000000;
+    border: 3px solid var(--color-negro);
     border-radius: 10px;
 }
 .mas-buscado li:hover{
@@ -148,7 +173,7 @@ main{
 .sugerencia{
     width: 940px;
     top: -3px;
-    background-color: #EDEDED;
+    background-color: var(--color-main);
     position: relative;
     margin: 0 auto;
 }
@@ -181,10 +206,10 @@ main{
 }
 /*FOOTER*/
 footer{
-    background-color: #DAD7D0;
+    background-color: var(--color-crema);
 }
 .footer{
-    background-color: #DAD7D0;
+    background-color: var(--color-crema);
     width: 940px;
     position: relative;
     margin: 0 auto;
@@ -295,13 +320,12 @@ input[type="password"] {
 }
 .bt-pulsa{
     position: absolute;
-    background-color: #195ddb;
+    background-color: var(--color-btAzul);
     margin: 80px 0 0 220px;
     padding: 10px;
     border-radius: 10px;
     text-transform: uppercase;
 }
-
 
 /*ESTILO PARA ARCH.PLAN*/
 .vacioFvt{
