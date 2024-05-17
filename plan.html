@@ -6,31 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <title>Explora Perú: Tu Guía Online</title>
+        <link rel="stylesheet" href="estilo.css">
+        <title>Explora Perú: Tus Planes</title>
     </head>
     <body>
         <header>
+            <!-- Parte del navegador principal -->
             <div class="encabezado">
-                <a href="index.html"><img src="imagenes/logo_transparent_2.png" width="100px" height="100px"></a>
-                <form>
-                    <input type="search" id="busqueda" name="busqueda" placeholder="Busca tu actividad">
-                    <input type="submit" value="Buscar" id="buscar">
-                </form>
-                <nav>
-                    <ul>
-                        <li><a href="favorito.html"><img src="vector/Vector.png" alt=""></a></li>
-                        <li><a href="plan.html"><img src="vector/Vector (1).png" alt=""></a></li>
-                        <li><a href="perfil.html"><img src="vector/Vector (2).png" alt=""></a></li>
-                    </ul>
-                </nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo_transparent_2.png" width="100px" height="100px">
+                    </a>
+                </div>
+                <div class="search_conteiner">
+                    <div class="search">
+                        <input id="busqueda" name="busqueda" placeholder="Busca tu actividad">
+                        <button id="buscar">Buscar</button>
+                    </div>
+                </div>
+                <div class="accesos">
+                    <nav>
+                        <ul>
+                            <li><a href="favorito.html"><img src="vector/Vector.png"></a></li>
+                            <li><a href="plan.html"><img src="vector/Vector (1).png"></a></li>
+                            <li><a href="perfil.html"><img src="vector/Vector (2).png"></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main>
-            <section class="main2">
+            <section class="main3">
                 <section class="rell">
                     <div class="vacioFvt"></div>
                     <span class="lt">Todavia No tienes planes<p>Pulsa el botón "AGREGAR" para añadir actividades a tus favoritos</p></span>
-                    <input class="bt-pulsa" type="submit" value="Encuentra cosas  que hacer">
+                    <button class="bt-pulsa">Encuentra cosas que hacer</button>
                 </section>
             </section>
         </main>

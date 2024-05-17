@@ -1,0 +1,242 @@
+/*ESTA HOJA DE ESTILO SOLO ES PARA LA PAGINA INDEX, PARTE DE ENCABEZADO Y NAV DE OTRAS PAGINAS*/
+:root {
+    --color-negro: #2C2F33;
+    --color-gris: #EDEDED;
+    --color-gris-footer: #DAD7D0;
+    --color-btAzul: #2B6AE4;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    position: relative;
+    background-color: var(--color-gris);
+}
+/*Estilo de header y section para todas las paginas*/
+/*HEADER*/
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-negro);
+}
+.encabezado {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+.logo {
+    display: inline-block;
+}
+.search_conteiner {
+    width: 400px;
+    height: 50px;
+    align-content: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 130px;
+    top: 26.5px;
+}
+.search input {
+    width: 297px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+.search button {
+    background-color: var(--color-btAzul);
+    border-radius: 20px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    margin-left: 0px;
+}
+.accesos {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    right: 0;
+    top: 35px;
+}
+.accesos ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.accesos li {
+    margin-right: 20px;
+}
+/*SECTION*/
+/*container-tipos*/
+.container-tipos {
+    width: 100%;
+    position: relative;
+}
+.container-img {
+    width: 100%;
+    height: 369px;
+    position: relative;
+    display: inline-block;
+}
+.container-img img {
+    width: 100%;
+    height: 100%;
+}
+.opacidad-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.eslogan {
+    color: #ffffff;
+    display: inline-block;
+    width: 350px;
+    font-size: 50px;
+    position: absolute;
+    top: 40px;
+    left: 72px;
+    font-weight: bold;
+}
+.btt-tipos {
+    position: absolute;
+    top: 307px;
+    left: 72px;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-button {
+    background-color: #aaa8;
+    border-radius: 16px 16px 0 0;
+    display: inline-block;
+    border: none;
+    width: 302px;
+    height: 62px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.nav-button:hover {
+    background-color: var(--color-gris);
+    color: #000;
+}
+/*Estilo para pagina index*/
+/*MAIN*/
+.main2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gris);
+    position: relative;
+}
+/*container-slider*/
+.LM {
+    position: absolute;
+    left: 72px;
+    z-index: 1;
+    top: 50px;
+}
+.LM p {
+    color: #000;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+/*slider 1 y 2*/
+.container-slider {
+    position: relative;
+    width: 1208px;
+    height: 350px;
+    background-color: var(--color-gris);
+    overflow: hidden;
+}
+.slider-imagenes {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 5px;
+}
+
+.slider-section {
+    width: calc(100% / 6);
+    height: 100%;
+    border: solid #4f4e4e98 2px;
+    border-radius: 10px;
+}
+.card{
+    padding: 10px;
+    height: 100%;
+}
+.description{
+    position: absolute;
+    top: 250px;
+    color: #3a3a3a;
+    font-weight: 900;
+}
+.description h3{
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.slider-section img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*Efectos para las clases de slider*/
+.slider-section:hover{
+    border: solid var(--color-negro);
+    transform: scale(1.002);
+}
+.slider-section:active{
+    border-color: #14318e;
+}
+.slider-section img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+/*BOTONES DE SLIDER*/
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 2.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    background-color: #bbb9b983;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+/*Efectos para botones de slider*/
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+.btn-left {
+    left: 10px;
+}
+.btn-right {
+    right: 10px;
+}

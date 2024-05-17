@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Perfil</title>
-    </head>
-    <body>
-        <header>
-            <div class="encabezado">
-                <a href="index.html"><img src="imagenes/logo_transparent_2.png" width="100px" height="100px"></a>
-                <form>
-                    <input type="search" id="busqueda" name="busqueda" placeholder="Busca tu actividad">
-                    <input type="submit" value="Buscar" id="buscar">
-                </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Explora Perú: Perfil</title>
+</head>
+<body>
+    <header>
+        <!-- Parte del navegador principal -->
+        <div class="encabezado">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/logo_transparent_2.png" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="search_conteiner">
+                <div class="search">
+                    <input id="busqueda" name="busqueda" placeholder="Busca tu actividad">
+                    <button id="buscar">Buscar</button>
+                </div>
+            </div>
+            <div class="accesos">
                 <nav>
                     <ul>
-                        <li><a href="favorito.html"><img src="vector/Vector.png" alt=""></a></li>
-                        <li><a href="plan.html"><img src="vector/Vector (1).png" alt=""></a></li>
-                        <li><a href="perfil.html"><img src="vector/Vector (2).png" alt=""></a></li>
+                        <li><a href="favorito.html"><img src="vector/Vector.png"></a></li>
+                        <li><a href="plan.html"><img src="vector/Vector (1).png"></a></li>
+                        <li><a href="perfil.html"><img src="vector/Vector (2).png"></a></li>
                     </ul>
                 </nav>
             </div>
-        </header>
-        <main>
-            <section class="main2">
-                <section class="container">
-                    <section class="section">
-                        <h2>INICIAR SESION</h2>
-                        <form>
-                            <label for="address-iniciar">Ingresa tu correo</label>
-                            <input type="email" id="address-iniciar" required placeholder="email@dominio.com">
-                            <label for="contraseña">Ingresa tu contraseña</label>
-                            <input type="password" id="contraseña" required>
-                            <input class="boton" type="submit" value="INICIAR SESION">
-                        </form>
-                    </section>
-                    <section class="section">
-                        <h2>REGISTRATE</h2>
-                        <form>
-                            <label for="datos">Nombre de usuario</label>
-                            <input type="text" id="datos" required>
-                            <label for="address-registrar">Dirección de correo eléctronico</label>
-                            <input type="email" id="address-registrar" required placeholder="email@dominio.com">
-                            <label for="password-reg">Contraseña</label>
-                            <input type="password" id="password-reg" required><br>
-                            <label><input type="checkbox" checked>¿Le gustaria recibir novedades sobre <strong>"Explora Perú"?</strong>.</label>
-                            <input class="boton" type="submit" value="REGISTRARSE">
-                            </form>
-                    </section>
+        </div>
+    </header>
+    <main>
+        <section class="main3">
+            <section class="container">
+                <section class="section">
+                    <h2>INICIAR SESION</h2>
+                    <form>
+                        <label for="address-iniciar">Ingresa tu correo</label>
+                        <input type="email" id="address-iniciar" required placeholder="email@dominio.com">
+                        <label for="contraseña">Ingresa tu contraseña</label>
+                        <input type="password" id="contraseña" required>
+                        <button class="boton">INICIAR SESION</button>
+                    </form>
+                </section>
+                <section class="section">
+                    <h2>REGISTRATE</h2>
+                    <form>
+                        <label for="datos">Nombre de usuario</label>
+                        <input type="text" id="datos" required>
+                        <label for="address-registrar">Dirección de correo eléctronico</label>
+                        <input type="email" id="address-registrar" required placeholder="email@dominio.com">
+                        <label for="password-reg">Contraseña</label>
+                        <input type="password" id="password-reg" required><br>
+                        <label><input type="checkbox" checked>¿Le gustaria recibir novedades sobre <strong>"Explora Perú"?</strong>.</label>
+                        <button class="boton">REGISTRARSE</button>
+                    </form>
                 </section>
             </section>
-        </main>
-        <footer>
-            <section class="footer">
-                <img src="imagenes/logo_transparent.png" width="150px" height="150px">
-                <nav>
-                    <ul>
-                        <li><a href="nosotros.html">Sobre nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="opinion.html">Opiniones</a></li>
-                    </ul>
-                </nav>
-                <p>&copy; Copyright Explora Perú - 2024</p>
-            </section>
-        </footer>        
-    </body>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <img src="imagenes/logo_transparent.png" alt="Explora Perú Logo" width="150px" height="150px">
+            <nav>
+                <ul>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="opinion.html">Opiniones</a></li>
+                </ul>
+            </nav>
+            <p>&copy; Copyright Explora Perú - 2024</p>
+        </section>
+    </footer>
+</body>
 </html>

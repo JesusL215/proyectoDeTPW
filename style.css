@@ -1,130 +1,21 @@
+/*ESTA HOJA DE ESTILOS ES PARA LAS DEMAS PAGINAS SIN CONTAR INDEX*/
 :root {
-	--color-negro: #2C2F33;
-	--color-gris: #EDEDED;
-	--color-crema: #DAD7D0;
-	--color-btAzul: #2B6AE4 ;
+    --color-negro: #2C2F33;
+    --color-gris: #EDEDED;
+    --color-gris-footer: #DAD7D0;
+    --color-btAzul: #2B6AE4;
 }
+
 /*ESTILO PARA HOME Y GENERAL*/
 /*Header Encabezado*/
-header{
-    background-color: var(--color-negro);
-}
-.encabezado{
-    width: 940px;
-    height: 100px;
-    background-color: var(--color-negro);
-    position: relative;
-    margin: 0 auto;
-}
-.encabezado nav{
-    position: absolute;
-    top: 40px;
-    right: 20px;
-}
-.encabezado nav li{
-    display: inline;
-    margin: 0 0 0  15px;
-}
-.encabezado nav a{
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-}
-.encabezado form{
-    position: absolute;
-    top: 30px;
-    left: 120px;
-}
-#busqueda{
-    width: 500px;
-    height: 50px;
-    border-radius: 30px;
-    border: none;
-    position: absolute;
-}
-#buscar{
-    background-color: var(--color-btAzul);
-    position: relative;
-    left: 395px;
-    top: 5px;
-    z-index: 1000;
-    width: 100px;
-    height: 40px;
-    border: none;
-    border-radius: 30px;
-    color: #ffffff;
-    font-weight: bold;
-}
 
-/*SECTION Banner*/
-.tipos{
-    background-color: var(--color-gris);
-
-}
-.tp2{
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
-}
-.container-img{
-    position: relative;
-    display: inline-block;
-}
-.opacidad-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-h1{
-    color: #ffffff;
-    display: inline-block;
-    width: 350px;
-    margin: 100px 10px;
-    font-size: 50px;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    font-weight: bold;
-}
-.tipos nav{
-    position: absolute;
-    top: 312px;
-    left: 80px;
-}
-.tipos nav li{
-    background-color: #504d4d85;
-    border-radius: 10px 10px 0 0;
-    display: inline-block;
-    margin: -2px;
-    padding: 10px;
-}
-.tipos nav a{
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-}
-.tipos nav li:hover {
-    background-color: var(--color-gris);
-	box-shadow: 0 0 20px 5px var(--color-gris);
-    border: none;
-    transform: scale(1.1);
-}
-.tipos nav a:hover{
-    color: #000000;
-}
 
 /*MAIN*/
 /*MAS BUSCADO*/
 main{
     background-color: var(--color-gris);
 }
-.main2{
+.main3{
     width: 940px;
     background-color: var(--color-gris);
     position: relative;
@@ -173,7 +64,7 @@ main{
 .sugerencia{
     width: 940px;
     top: -3px;
-    background-color: var(--color-main);
+    background-color: var(--color-gris);
     position: relative;
     margin: 0 auto;
 }
@@ -206,10 +97,10 @@ main{
 }
 /*FOOTER*/
 footer{
-    background-color: var(--color-crema);
+    background-color: var(--color-gris-footer);
 }
 .footer{
-    background-color: var(--color-crema);
+    background-color: var(--color-gris-footer);
     width: 940px;
     position: relative;
     margin: 0 auto;
