@@ -1,64 +1,347 @@
-/*ESTA HOJA DE ESTILOS ES PARA LAS DEMAS PAGINAS SIN CONTAR INDEX*/
 :root {
     --color-negro: #2C2F33;
     --color-gris: #EDEDED;
     --color-gris-footer: #DAD7D0;
     --color-btAzul: #2B6AE4;
 }
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color-gris);
+}
 
-/*ESTILO PARA HOME Y GENERAL*/
-/*Header Encabezado*/
-
-
+/*Estilo de header y section para todas las paginas*/
+/*HEADER*/
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-negro);
+}
+.encabezado {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+.logo {
+    display: inline-block;
+}
+.search_conteiner {
+    width: 400px;
+    height: 50px;
+    align-content: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 130px;
+    top: 26.5px;
+}
+.search input {
+    width: 297px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+.search button {
+    background-color: var(--color-btAzul);
+    border-radius: 20px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    margin-left: 0px;
+}
+.accesos {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    right: 0;
+    top: 35px;
+}
+.accesos ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.accesos li {
+    margin-right: 20px;
+}
+/*SECTION*/
+/*container-tipos*/
+.container-tipos {
+    width: 100%;
+    position: relative;
+}
+.container-img {
+    width: 100%;
+    height: 369px;
+    position: relative;
+    display: inline-block;
+}
+.container-img img {
+    width: 100%;
+    height: 100%;
+}
+.opacidad-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.eslogan {
+    color: #ffffff;
+    display: inline-block;
+    width: 350px;
+    font-size: 50px;
+    position: absolute;
+    top: 40px;
+    left: 72px;
+    font-weight: bold;
+}
+.btt-tipos {
+    position: absolute;
+    top: 307px;
+    left: 72px;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-button {
+    background-color: #aaa8;
+    border-radius: 16px 16px 0 0;
+    display: inline-block;
+    border: none;
+    width: 302px;
+    height: 62px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.nav-button:hover {
+    background-color: var(--color-gris);
+    color: #000;
+}
+/*ESTILO PARA PAGINA INDEX*/
+/* MAIN */
+.contenedorMain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gris);
+    position: relative;
+}
+/* Estilo común para los sliders */
+.slider1, .slider2 {
+    width: 1208px; /* Asegura que ambos sliders tengan el mismo ancho */
+    margin: 20px 0; /* Añade margen vertical para separación */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido del slider esté en columna */
+    align-items: center; /* Centra el contenido dentro de cada slider */
+}
+/* Ajusta la posición de .LM para que esté dentro del slider */
+.LM {
+    align-self: flex-start; /* Alinea el texto a la izquierda dentro del slider */
+    z-index: 1;
+    margin-bottom: 10px; /* Añade margen inferior para separación */
+}
+.LM p {
+    color: #000;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+/* container-slider */
+.container-slider {
+    position: relative;
+    width: 100%; /* Usa el 100% del ancho del slider */
+    height: 350px;
+    background-color: var(--color-gris);
+    overflow: hidden;
+}
+/* Ajustes para imágenes y secciones del slider */
+.slider-imagenes {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 5px;
+}
+.slider-section {
+    width: calc(100% / 6);
+    height: 100%;
+    border: solid #4f4e4e98 2px;
+    border-radius: 10px;
+}
+.card {
+    padding: 10px;
+    height: 100%;
+}
+.description {
+    position: absolute;
+    top: 250px;
+    color: #3a3a3a;
+    font-weight: 900;
+}
+.description h3 {
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.slider-section img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Efectos para las clases de slider */
+.slider-section:hover {
+    border: solid var(--color-negro);
+    transform: scale(1.002);
+}
+.slider-section:active {
+    border-color: #14318e;
+}
+.slider-section img:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+/* BOTONES DE SLIDER */
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 2.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    background-color: #bbb9b983;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+/* Efectos para botones de slider */
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+.btn-left {
+    left: 10px;
+}
+.btn-right {
+    right: 10px;
+}
+/*ESTILO PARA TODAS LA PAGINAS (menos index*/
 /*MAIN*/
 /*MAS BUSCADO*/
 main{
     background-color: var(--color-gris);
 }
 .main3{
-    width: 940px;
+    width: 100%;
     background-color: var(--color-gris);
     position: relative;
     padding-bottom: 100px;
     margin: 0 auto;
 }
-.mas-buscado{
+.mas-buscado {
     width: 940px;
-    height: 320px;
-    top: -3px;
+    height: auto;
     background-color: var(--color-gris);
     position: relative;
     margin: 0 auto;
 }
-.buscado{
+
+.buscado {
     display: inline-block;
-    width: 500px;
-    position: absolute;
-    left: 50px;
+    width: 100%;
+    position: relative;
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
-.mas-buscado li{
-    display: inline-block;
-    position: relative;
-    left: 45px;
+
+.mas-buscado ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mas-buscado li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 30%;
-    height: 250px;
-    vertical-align: top;
     margin-top: 50px;
-    padding: 15px 0;
+    padding: 0;
     box-sizing: border-box;
     border: 3px solid var(--color-negro);
     border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
 }
-.mas-buscado li:hover{
+
+.mas-buscado li a:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.mas-buscado li:hover {
     border-color: #c78c19;
     transform: scale(1.01);
 }
-.mas-buscado li:active{
-    border-color: #088c19;
+
+.mas-buscado li img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.mas-buscado li p {
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+}
+
+.mas-buscado li a:last-of-type {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(43, 82, 165);
 }
 /*SUGERENCIA*/
 .sugerencia{
@@ -95,40 +378,40 @@ main{
 .sugerencia li:active{
     border-color: #088c19;
 }
-/*FOOTER*/
-footer{
+/*FOOTER(con index)*/
+footer {
     background-color: var(--color-gris-footer);
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia abajo */
 }
-.footer{
+.footer {
     background-color: var(--color-gris-footer);
     width: 940px;
     position: relative;
     margin: 0 auto;
 }
-.footer nav{
+.footer nav {
     position: absolute;
     top: 60px;
     right: 330px;
 }
-.footer nav li{
+.footer nav li {
     display: inline;
-    margin: 0 0 0  15px;
+    margin: 0 0 0 15px;
 }
-.footer nav a{
+.footer nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
     font-size: 12px;
     text-decoration: none;
 }
-
-.footer p{
+.footer p {
     position: absolute;
     font-size: 15px;
     top: 120px;
     right: 368px;
 }
-
 
 /*ESTILO PARA ARCH.PERFIL*/
 .container {

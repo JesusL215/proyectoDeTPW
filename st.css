@@ -1,0 +1,71 @@
+:root {
+    --color-negro: #2C2F33;
+    --color-gris: #EDEDED;
+    --color-gris-footer: #DAD7D0;
+    --color-btAzul: #2B6AE4;
+}
+/*ESTILO PARA PAGINAS DE CULTURA, GASTRONOMIA Y AVENTURA*/
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.detalle-experiencia {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.detalle-experiencia h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #2980b9;
+}
+
+.detalle-experiencia img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.detalle-experiencia p {
+    margin-bottom: 10px;
+}
+
+.detalle-experiencia ul {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.detalle-experiencia ul li {
+    margin-bottom: 10px;
+}
+
+.detalle-experiencia h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #2980b9;
+}
+
+.detalle-experiencia a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.detalle-experiencia a:hover {
+    text-decoration: underline;
+}
+
+.footer img {
+    max-width: 100%;
+    height: auto;
+}
