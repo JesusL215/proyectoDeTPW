@@ -99,11 +99,5 @@ document.addEventListener('DOMContentLoaded', () => {
             currentIndex = (currentIndex - 3 + totalImages) % totalImages;
             moveSlider();
         });
-
-        // Automatic slider
-        /*setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalImages;
-            moveSlider();
-        }, 5000); // Change slide every 5 seconds*/
     });
 });
