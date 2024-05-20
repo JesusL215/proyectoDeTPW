@@ -1,3 +1,67 @@
+// #region HEADER - SECTION - FOOTER DINAMICO
+const header = document.querySelector('header');
+const section = document.querySelector('.container-tipos');
+const footer = document.querySelector('footer');
+
+header.innerHTML = `
+<!-- Parte del navegador principal -->
+<div class="encabezado">
+    <div class="logo">
+        <a href="index.html">
+            <img src="imagenes/logo_transparent_2.png" width="100px" height="100px">
+        </a>
+    </div>
+    <div class="search_conteiner">
+        <div class="search">
+            <input id="busqueda" name="busqueda" placeholder="Busca tu actividad">
+            <button id="buscar">Buscar</button>
+        </div>
+    </div>
+    <div class="accesos">
+        <nav>
+            <ul>
+                <li><a href="favorito.html"><img src="vector/Vector.png"></a></li>
+                <li><a href="plan.html"><img src="vector/Vector (1).png"></a></li>
+                <li><a href="perfil.html"><img src="vector/Vector (2).png"></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+`;
+
+section.innerHTML = `
+<div class="container-img">
+    <img src="imagenes/banner.jpg">
+    <div class="opacidad-img"></div>
+</div>
+<div class="eslogan"><h1>Explora, vive, recuerda: tu viaje, tu legado</h1></div>
+<div class="btt-tipos">
+    <nav class="nav">
+        <button type="button" class="nav-button" data-href="cultura.html">CULTURA</button>
+        <button type="button" class="nav-button" data-href="gastronomia.html">GASTRONOMIA</button>
+        <button type="button" class="nav-button" data-href="aventura.html">AVENTURA</button>
+        <button type="button" class="nav-button" data-href="evento.html">EVENTOS</button>
+    </nav>
+</div>
+`;
+
+footer.innerHTML = `
+<section class="footer">
+    <img src="imagenes/logo_transparent.png" width="150px" height="150px">
+    <div class="footer-informacion">
+        <nav>
+            <ul>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="opinion.html">Opiniones</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p>&copy; Copyright Explora Perú - 2024</p>
+</section>
+`;
+
+// #region BOTONES DE SECTION-NAV
 const navButtons = document.querySelectorAll('.nav-button');
 
 navButtons.forEach((button) => {
@@ -6,7 +70,7 @@ navButtons.forEach((button) => {
     });
 });
 
-//SLIDER
+// #region SLIDER
 document.addEventListener('DOMContentLoaded', () => {
     const sliders = [
         { container: document.getElementById('slider1'), 
